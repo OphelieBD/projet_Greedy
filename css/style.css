@@ -1,0 +1,352 @@
+@font-face 
+{
+    font-family: 'ProximaNovaAltLight';
+    src: url('../fonts/ProximaNovaAltLight.otf');
+}
+
+@font-face 
+{
+    font-family: 'BadScript-Regular';
+    src: url('../fonts/BadScript-Regular.ttf') format('truetype');
+}
+
+body
+{
+	margin: 0;
+}
+
+.navbar 
+{
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0px;
+	background-color: rgba(218, 215, 164, 0.8);
+	border: none;
+	padding-right: 168px;
+	box-shadow: 0px 2px 2px #B8B7A8;
+	z-index: 1;
+	font-family: 'BadScript-Regular';
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #263A3E;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: #263A3E;
+}
+
+.navbar-fixed-top
+{
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.container
+{
+	width: 100%;
+}
+
+#accueil
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background-image: url(../images/burger2copie2.jpg);
+	background-size: cover;
+	color: #263A3E;
+}
+
+#logo
+{
+	position: relative;
+	margin-top: 20px;
+	z-index: 5;
+}
+
+#slogan
+{
+	margin-top: 300px;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #263A3E;
+}
+
+#adresse
+{
+	color: white;
+	font-size: 1.5em;
+	margin-top: 180px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #263A3E;
+}
+
+#slogan, #adresse, #propos, #menuCarte, #derniereSection, footer
+{
+	font-family: 'ProximaNovaAltLight', 'Georgia';
+}
+
+h1, h3
+{
+	margin: 20px;
+	font-family: 'BadScript-Regular';
+	font-weight: bold;
+}
+
+.speech
+{
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+#photoChef
+{
+	border-radius: 50%;
+	margin: 20px;
+}
+
+.nom
+{
+	padding: 5px;
+	border-top: 1px solid #263A3E;
+	border-bottom: 1px solid #263A3E;
+	text-transform: uppercase;
+}
+
+#carreImages
+{
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+#repas1
+{
+	background-image: url(../images/1.jpg);
+}
+
+#repas2
+{
+	background-image: url(../images/2.jpg);
+}
+
+#repas3
+{
+	background-image: url(../images/3.jpg);
+}
+
+#repas4
+{
+	background-image: url(../images/4.jpg);
+}
+
+#repas1, #repas2, #repas3, #repas4
+{
+	height: 188px;
+	width: 188px;
+	padding: 5px;
+	margin: 5px;
+	background-size: 100% 100%;
+}
+
+.petitDiv
+{
+	width: 100%;
+	height: 100%;
+	border: 3px solid white;
+}
+
+#vecteur1
+{
+	position: relative;
+	top: 115px;
+	left: 110px;
+	z-index: 6;
+}
+
+#propos
+{
+	padding-bottom: -90px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#la_carte
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background-image: url(../images/462495923.jpg);
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#fondCarte
+{
+	background-color: rgba(200, 221, 227, 0.6);
+	padding-left: 30px;
+	margin-right: 130px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 15px
+}
+
+#menuCarte
+{
+
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+#imageCarte1
+{
+	background-image: url(../images/lasagnes.jpg);
+}
+
+
+#imageCarte2
+{
+	background-image: url(../images/pizza.jpg);
+}
+
+#imageCarte1, #imageCarte2
+{
+	height: 375px;
+	width: 290px;
+	background-size: 100% 100%;
+	border: 5px white solid;
+	box-shadow: 2px 2px 5px black;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+#derniereSection
+{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	font-size: 1.2em;
+}
+
+footer
+{
+	background-color: rgba(218, 215, 164, 0.8);
+	padding-top: 18px;
+	padding-bottom: 15px;
+}
+
+#spanForm
+{
+	display: none;
+}
+
+#carte
+{
+	margin-bottom: -5px;
+}
+
+@media screen and (max-width: 1024px)
+{
+	#carreImages
+	{
+		margin-left: 20px;
+	}
+
+	#imageCarte1, #imageCarte2
+	{
+		margin: auto;
+		margin-bottom: 50px;
+		margin-top: 20px;
+	}
+
+	#fondCarte
+	{
+		margin-left: 85px;
+		margin-right: 85px;
+	}
+}
+
+@media all and (max-device-width: 480px)
+{	
+	.navbar
+	{
+		position: fixed;
+		z-index: 5
+		padding: 0;
+	}
+
+	.navbar-default
+	{
+		padding: 0;
+	}
+
+	.navbar-brand
+	{
+		text-transform: none;
+	}
+
+	#logo
+	{
+		margin-top: 80px;
+		z-index: 1;
+	}
+
+	#premierePhoto
+	{
+		height: 530px;
+	}
+
+	#slogan
+	{
+		position: relative;
+		margin: 0;
+		padding-top: 50px;
+		font-size: 1.5em;
+	}
+
+	#adresse
+	{
+		margin: 0;
+		font-size: 1em;
+		padding-top: 80px;
+	}
+
+	.speech
+	{
+		font-size: 1em;
+	}
+
+	#photoChef
+	{
+		margin: 10px;
+	}
+
+	.nom
+	{
+		font-size: 0.8em;
+	}
+
+	#carreImages
+	{
+		margin-right: 100px;
+	}
+
+	#fondCarte
+	{
+		margin: 0px;
+	}
+
+	#fondCarte ul
+	{
+		padding: 0px;
+	}
+
+	#adresseResto, #divForm, #horaires
+	{
+		margin-bottom: 50px;
+	}
+}
